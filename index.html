@@ -9,9 +9,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!---Título de la pagina--->
-    <title>Mi pagina web</title>
+    <title>Guia de profesores - CUCEI</title>
     <!---Descripcion de la pagina--->
-    <meta name = "description" content = "Descripcion pagina">
+    <meta name = "description" content = "Guia y Chatbot de los profesors en CUCEI">
     <!---Link para archivo CSS--->
     <link rel="stylesheet" href="style.css">
     <!---Link para archivo javascript--->
@@ -21,7 +21,13 @@
 <body>
     <header>
         <!---Encabezado--->
-        <h1>Mi pagina web</h1>
+        <h1>Chatbot Profesores CUCEI</h1>
+        <!--Menu de navegacion: Introduccion, Instrucciones, Chatbot, Aclaraciones;
+        Izquierda, Centro, Derecha, Salto de linea, Centro, Centro-->
+        <nav>
+            <a>Introduccion</a> <a>Instrucciones</a> <a>Chatbot</a><br>
+            <a>Aclaraciones</a> <a>Creditos</a>
+        </nav>
     </header>
     <main>
         <!---Contenido principal--->
@@ -31,9 +37,111 @@
         significado semántico --->
         <!---Se pueden utilizar los elementos anteriormente mencionados en footer
         siempre y cuando tengan sentido --->
+
+        <article>
+            <!--Almacenara Introduccion e Instrucciones-->
+            <section>
+                <!--Introduccion-->
+                <!--h2 orientado a la izquierda, llamativo-->
+                <h2>Bienvenido</h2>
+                <!--Texto orientado a la derecha-->
+                <p>Nos complace presentar a 'Leonel' el chatbot que te ayudara
+                    con tu seleccion de profesores en la universidad;<br><br>
+                    Cargado con la opinion sincera y experiencia propia de estudiantes,
+                    Leonel esta listo para ser de tu experiencia universitaria la mejor.
+                </p>
+                <!--Lista de beneficios de leonel , orientado a la izquierda, desordenada-->
+                <div>
+                    <ul>
+                        <!--Titulo, atractivo, grande-->
+                        <strong>Beneficios</strong>
+                        <li><strong>Sinceridad:</strong> El chatbot esta 100% entrenado con informacion sincera de alumnos</li>
+                        <li><strong>Confianza:</strong> Nos aseguramos de que las opiniones sean relevantes y correctas</li>
+                        <li><strong>Facil y rapido:</strong> No esperes los documentos que tardan años en llegar, informate ahora</li>
+                        <li><strong>Disponibilidad:</strong> Habla con Leonel cuando quieras</li>
+                        <li><strong>Familiar:</strong> Creado por estudiantes para estudiantes</li>
+                    </ul>
+                </div>
+            </section>
+            <section>
+                <!--Instrucciones-->
+                <!--h2 llamativo, orientado a la izquierda-->
+                <h2>¿Como usar a Leonel?</h3>
+                <!--Apartado de instrucciones concretas-->
+                <div>
+                    <p>Para asegurar tu maximo rendimiento con Leonel, aqui van algunas instrucciones que te recomendamos seguir</p>
+                    <ol>
+                        <!--Titulo grande, llamativo-->
+                        <strong>Instrucciones</strong>
+                        <li>Accede al chatbot desde la pagina oficial (esta) con el link que proporcionamos</li>
+                        <li>Espera a que el chatbot cargue por completo</li>
+                        <li>Ingresa el nombre <strong>completo</strong> del profesor como aparece en Siauu o Empezando por apellidos o Empezando por nombres</li>
+                        <li>Espera a que el chatbot genere su respuesta</li>
+                        <li>Lee detenidamente la respuesta, en lo general el chatbot desplegara toda la informacion que tiene disponible del profesor</li>
+                        <li>Para otra consulta, repite desde el paso 3</li>
+                        <li>Una vez terminado, cierra la ventana del chatbot</li>
+                    </ol>
+                </div>
+                <!--Apartado de advertencias, solo un objeto, orientado a la derecha, de color amarillo, con el logo de advertencia-->
+                <div>
+                    <!--Imagen del logo de advertencia orientado a la izquierda, muy pequeño, box de color amarillo o mostaza-->
+                    <!--Texto orientado al centro, en la misma linea que la imagen-->
+                    <p style="text-align: center;">En caso de lentitud en el chatbot, puede deberse a la demanda del mismo, en especial en tiempo de agenda, espera a que responda.</p>
+                </div>
+            </section>
+
+        </article>
+
+        <article>
+            <!--Almacenara link al chat bot y Aclaraciones-->
+            <section>
+                <!--Chatbot, todo centralizado-->
+                <h2>Ingresa al chatbot</h2>
+                <p>Da click al boton e ingresa al chatbot, no esperes mas</p>
+                <div>
+                    <!--Boton que lleve al chatbot, grande, color azul, animacion CSS hover, centralizado, font bonita-->
+                    <button>¡Conocer a Leonel!</button>
+                </div>
+            </section>
+
+            <section>
+                <!--Aclaraciones, todo orientado a la izquierda-->
+                <p>Este chatbot fue creado para solucionar la problematica de la incertidumbre en el conocimiento de profesores, el objetivo de este 
+                    chatbot es dar orientacion a los alumnos y puedan escoger sus profesores ideales en base a su forma de aprendizaje.<br><br>
+                    En ningun momento este chatbot incita el odio o la agresion a cualquier persona, se mantiene respetuoso y profesional en sus respuestas
+                    y utiliza informacion obtenida en base a encuestas personales y digitales de alumnos de CUCEI que ya han tenido experiencia con los profesores.
+                </p>
+            </section>
+        </article>
+
     </main>
     <footer>
         <!---Pie de pagina: Última información--->
+        <!--Almacenara creditos de creacion y herramientas utilizadas-->
+        <div>
+            <h3>Creditos</h3>
+            <!--Creditos de creacion-->
+            <h4>Desarrollador de Front-end, Planificador del proyecto, Obtencion y Administracion de informacion</h4>
+            <p><strong>Diego Amadeo Abundis Dominguez</strong></p>
+            <p>Estudiante de CUCEI interesado en la problematica de la incertidumbre en profesores.</p>
+            <p><strong>Cita:</strong> Desde que entré a CUCEI la informacion sobre la dinamica de trabajo de los profesores me ha resultado 
+            incompleta, dificil de encontrar y confusa, por lo que he decidido tomar cartas en el asunto con este proyecto.</p><br>
+
+            <h4>Entrenador del Chatbot</h4>
+            <p><strong>Uriel</strong></p>
+            <p>Estudiante de CUCEI, interesado en la problematica de la incertidumbre en profesores</p>
+            <p><strong>Cita:</strong> Desde el comienzo la incertidumbre con los profesores es un problema, en especial con materias importantes, 
+            por lo que buscamos una solucion mediante este proyecto.</p>
+        </div>
+
+        <div>
+            <!--Herramientas utilizadas, toda una caja de color, todo centrado, imagen del logo del chatbot centrada-->
+            <h4>Herramientas utilizadas</h4>
+            <p>Para este proyecto utlizamos el Chatbot 'X' junto con las herramientas de Google para cuestionarios y los conocimientos adquiridos en
+                Estadistica.
+            </p>
+            <!--Imagen del logo del chatbot, centrada, pequeña-->
+        </div>
     </footer>
 </body>
 
