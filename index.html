@@ -26,8 +26,8 @@
         Izquierda, Centro, Derecha, Salto de linea, Centro, Centro-->
         <div class="navegacion">
             <nav>
-                <a>Introduccion</a> <a>Instrucciones</a> <a>Chatbot</a><br>
-                <a>Aclaraciones</a> <a>Creditos</a>
+                <a href="#introduccion">Introduccion</a> <a href="#instrucciones">Instrucciones</a> <a href="#chatbot">Chatbot</a>
+                <a href="#tituloAclaraciones">Aclaraciones</a> <a href="#creditos">Creditos</a>
             </nav>
         </div>
     </header>
@@ -37,7 +37,7 @@
             <section class="bienvenidaGeneral">
                 <!--Introduccion-->
                 <!--llamativo-->
-                <h2>Bienvenido</h2>
+                <h2 id="introduccion">Bienvenido</h2>
                 <!--Texto orientado a la derecha-->
                 <p>Nos complace presentar a 'Leonel' el chatbot que te ayudara
                     con tu seleccion de profesores en la universidad;<br><br>
@@ -48,11 +48,11 @@
                 <div>
                     <ul>
                         <!--Titulo, atractivo, grande-->
-                        <strong>Beneficios</strong>
-                        <li><strong>Sinceridad:</strong> El chatbot esta 100% entrenado con informacion sincera de alumnos</li>
-                        <li><strong>Confianza:</strong> Nos aseguramos de que las opiniones sean relevantes y correctas</li>
-                        <li><strong>Facil y rapido:</strong> No esperes los documentos que tardan años en llegar, informate ahora</li>
-                        <li><strong>Disponibilidad:</strong> Habla con Leonel cuando quieras</li>
+                        <p><strong>Beneficios</strong></p>
+                        <li><strong>Sinceridad:</strong> El chatbot esta 100% entrenado con informacion sincera de alumnos</li><br>
+                        <li><strong>Confianza:</strong> Nos aseguramos de que las opiniones sean relevantes y correctas</li><br>
+                        <li><strong>Facil y rapido:</strong> No esperes los documentos que tardan años en llegar, informate ahora</li><br>
+                        <li><strong>Disponibilidad:</strong> Habla con Leonel cuando quieras</li><br>
                         <li><strong>Familiar:</strong> Creado por estudiantes para estudiantes</li>
                     </ul>
                 </div>
@@ -60,19 +60,19 @@
             <section class="usoLeonel">
                 <!--Instrucciones-->
                 <!--h2 llamativo, orientado a la izquierda-->
-                <h2>¿Como usar a Leonel?</h3>
+                <h2 id="instrucciones">¿Como usar a Leonel?</h3>
                 <!--Apartado de instrucciones concretas-->
                 <div>
                     <p>Para asegurar tu maximo rendimiento con Leonel, aqui van algunas instrucciones que te recomendamos seguir</p>
                     <ol>
                         <!--Titulo grande, llamativo-->
-                        <strong>Instrucciones</strong>
-                        <li>Accede al chatbot desde la pagina oficial (esta) con el link que proporcionamos</li>
-                        <li>Espera a que el chatbot cargue por completo</li>
-                        <li>Ingresa el nombre <strong>completo</strong> del profesor como aparece en Siauu o Empezando por apellidos o Empezando por nombres</li>
-                        <li>Espera a que el chatbot genere su respuesta</li>
-                        <li>Lee detenidamente la respuesta, en lo general el chatbot desplegara toda la informacion que tiene disponible del profesor</li>
-                        <li>Para otra consulta, repite desde el paso 3</li>
+                        <p><strong>Instrucciones</strong></p>
+                        <li>Accede al chatbot desde la pagina oficial (esta) con el link que proporcionamos</li><br>
+                        <li>Espera a que el chatbot cargue por completo</li><br>
+                        <li>Ingresa el nombre <strong>completo</strong> del profesor como aparece en Siauu o Empezando por apellidos o Empezando por nombres</li><br>
+                        <li>Espera a que el chatbot genere su respuesta</li><br>
+                        <li>Lee detenidamente la respuesta, en lo general el chatbot desplegara toda la informacion que tiene disponible del profesor</li><br>
+                        <li>Para otra consulta, repite desde el paso 3</li><br>
                         <li>Una vez terminado, cierra la ventana del chatbot</li>
                     </ol>
                 </div>
@@ -80,6 +80,7 @@
                 <div>
                     <!--Imagen del logo de advertencia orientado a la izquierda, muy pequeño, box de color amarillo o mostaza-->
                     <!--Texto orientado al centro, en la misma linea que la imagen-->
+                    <br>
                     <p style="text-align: center;">En caso de lentitud en el chatbot, puede deberse a la demanda del mismo, en especial en tiempo de agenda, espera a que responda.</p>
                 </div>
             </section>
@@ -90,20 +91,24 @@
             <!--Almacenara link al chat bot y Aclaraciones-->
             <section class="ingresoChatbot">
                 <!--Chatbot, todo centralizado-->
-                <h2>Ingresa al chatbot</h2>
-                <p>Da click al boton e ingresa al chatbot, no esperes mas</p>
-                <div>
-                    <!--Boton que lleve al chatbot, grande, color azul, animacion CSS hover, centralizado, font bonita-->
-                    <button>¡Conocer a Leonel!</button>
+                <div class="cajaBoton"> 
+                    <h2 id="chatbot">Ingresa al chatbot</h2>
+                    <p>Da click al boton e ingresa al chatbot, no esperes mas</p>
+                    <div>
+                        <!--Boton que lleve al chatbot, grande, color azul, animacion CSS hover, centralizado, font bonita-->
+                        <button id="boton">¡Conocer a Leonel!</button>
+                    </div>
                 </div>
 
                 <!--Aclaraciones-->
-                <h3>Aclaraciones</h3>
-                <p>Este chatbot fue creado para solucionar la problematica de la incertidumbre en el conocimiento de profesores, el objetivo de este 
-                    chatbot es dar orientacion a los alumnos y puedan escoger sus profesores ideales en base a su forma de aprendizaje.<br><br>
-                    En ningun momento este chatbot incita el odio o la agresion a cualquier persona, se mantiene respetuoso y profesional en sus respuestas
-                    y utiliza informacion obtenida en base a encuestas personales y digitales de alumnos de CUCEI que ya han tenido experiencia con los profesores.
-                </p>
+                <div class="aclaraciones">
+                    <h3 id="tituloAclaraciones">Aclaraciones</h3>
+                    <p>Este chatbot fue creado para solucionar la problematica de la incertidumbre en el conocimiento de profesores, el objetivo de este 
+                        chatbot es dar orientacion a los alumnos y puedan escoger sus profesores ideales en base a su forma de aprendizaje.<br><br>
+                        En ningun momento este chatbot incita el odio o la agresion a cualquier persona, se mantiene respetuoso y profesional en sus respuestas
+                        y utiliza informacion obtenida en base a encuestas personales y digitales de alumnos de CUCEI que ya han tenido experiencia con los profesores.
+                    </p>
+                </div>
             </section>
         </article>
 
@@ -112,30 +117,37 @@
         <!---Pie de pagina: Última información--->
         <!--Almacenara creditos de creacion y herramientas utilizadas-->
         <section class="creditos">
-            <h3>Creditos</h3>
+            <h3 id="creditos">Creditos</h3>
 
             <div class="diego">   
-                <h4>Desarrollador de Front-end, Planificador del proyecto, Obtencion y Administracion de informacion</h4>
-                <p><strong>Diego Amadeo Abundis Dominguez</strong></p>
-                <p>Estudiante de CUCEI interesado en la problematica de la incertidumbre en profesores.</p>
-                <p><strong>Cita:</strong> Desde que entré a CUCEI la informacion sobre la dinamica de trabajo de los profesores me ha resultado 
+                <h4 id="dgTitulo">Desarrollador de Front-end, Planificador del proyecto, Obtencion y Administracion de informacion</h4>
+                <p style="font-family: Helvetica;"><strong>Diego Amadeo Abundis Dominguez</strong></p>
+                <p style="font-family: sans-serif;">Estudiante de CUCEI interesado en la problematica de la incertidumbre en profesores.</p>
+                <p style="font-family: sans-serif;"><strong>Cita:</strong> Desde que entré a CUCEI la informacion sobre la dinamica de trabajo de los profesores me ha resultado 
                 incompleta, dificil de encontrar y confusa, por lo que he decidido tomar cartas en el asunto con este proyecto.</p><br>
             </div>   
 
             <div class="uriel">
-                <h4>Entrenador del Chatbot</h4>
-                <p><strong>Uriel</strong></p>
-                <p>Estudiante de CUCEI, interesado en la problematica de la incertidumbre en profesores</p>
-                <p><strong>Cita:</strong> Desde el comienzo la incertidumbre con los profesores es un problema, en especial con materias importantes, 
+                <h4 id="ulTitulo">Entrenador del Chatbot</h4>
+                <p style="font-family: Helvetica;"><strong>Uriel</strong></p>
+                <p style="font-family: sans-serif;">Estudiante de CUCEI, interesado en la problematica de la incertidumbre en profesores</p>
+                <p style="font-family: sans-serif;"><strong>Cita:</strong> Desde el comienzo la incertidumbre con los profesores es un problema, en especial con materias importantes, 
                 por lo que buscamos una solucion mediante este proyecto.</p>
             </div>
 
         </section>    
+        
+        <div class="navegacion">
+            <nav>
+                <a href="#introduccion">Introduccion</a> <a href="#instrucciones">Instrucciones</a> <a href="#chatbot">Chatbot</a><br>
+                <a href="#tituloAclaraciones">Aclaraciones</a> <a href="#creditos">Creditos</a>
+            </nav>
+        </div>
 
         <div class="herramienta">
             <!--Herramientas utilizadas, toda una caja de color, todo centrado, imagen del logo del chatbot centrada-->
-            <h4>Herramientas utilizadas</h4>
-            <p>Para este proyecto utlizamos el Chatbot 'X' junto con las herramientas de Google para cuestionarios y los conocimientos adquiridos en
+            <h4 id="herramientas">Herramientas utilizadas</h4>
+            <p style="font-family: sans-serif;">Para este proyecto utlizamos el Chatbot 'X' junto con las herramientas de Google para cuestionarios y los conocimientos adquiridos en
             Estadistica.
             </p>
             <!--Imagen del logo del chatbot, centrada, pequeña-->

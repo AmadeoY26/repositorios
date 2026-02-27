@@ -23,52 +23,155 @@ header{ /*Estilo general para el header*/
     margin: 20px auto;
 }
 
-.navegacion{ /*Estilos para los links de navegacion*/
-
-    /*Formato de la caja*/
-    width: 400px;
-    margin: 20px auto;
+.navegacion { /*Estilos para la navegacion*/
+    width: 450px;
+    margin: 0px auto;
     padding: 20px;
-    background-color: blueviolet;
+    background-color: rgb(255, 98, 0);
     border-radius: 15px;
-    box-shadow: 10px 10px 10px rgba(254, 237, 0, 0.9);
-
-    /*Formato de los links*/
-    color: rgb(255, 255, 255);
-    font-family: math, Arial, Helvetica, sans-serif;
-    font-size: large;
+    box-shadow: 10px 10px 10px rgba(254, 224, 0, 0.9);
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
-/*-----------------------------------------------------------------------------------------------------------*/
 
+.navegacion a {
+    display: inline-block;       /*Permite asignar padding y márgenes correctamente */
+    background-color: #FFD700; 
+    color: black;
+    border: 2px solid white;
+    padding: 8px 15px;
+    margin: 5px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: all 0.3s ease;   /*Suaviza la animación del hover*/
+}
+
+
+.navegacion a:hover {
+    background-color: #ffeb3b; 
+    transform: scale(1.1);       /*Crece ligeramente */
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.8); /*Brillo externo*/
+    border-color: #ffffff;       /*El borde cambia a blanco al resaltar */
+}
+
+/*--------------------------------------------------------------------------------------------------*/
 
 /*Estilos para el main---------------------------------------------------------------------------------------*/
 
 .bienvenidaGeneral{ /*Estilos generales para la seccion de bienvenida*/
     width: 800px;
-    margin: 40px auto;
+    margin: 80px auto;
     padding: 20px;
     border-radius: 15px;
-    background-color: blueviolet;
-    box-shadow: 0 2px 10px rgba(254, 237, 0, 0.9);
+    background-color: rgb(38, 0, 255);
+    box-shadow: 0 2px 10px rgba(254, 224, 0, 0.9);
+    color: white;
+    font-family: sans-serif;
+}
+
+#introduccion{ /*Estilo al h2 'Bienvenido'*/
+    font-family: Helvetica;
+    text-decoration: underline;
+    text-shadow: -4px 10px 10px black;
 }
 
 .usoLeonel{ /*Estilos generales para la seccion del uso de leonel*/
     max-width: 800px;
-    margin: 40px auto;
+    margin: 80px auto;
     padding: 20px;
     border-radius: 30px;
-    background-color: blueviolet;
-    box-shadow: 0 2px 10px rgba(254, 237, 0, 0.9);
+    background-color: rgb(38, 0, 255);
+    box-shadow: 0 2px 10px rgba(254, 224, 0, 0.9);
+    color: white;
+    font-family: sans-serif;
 
 }
 
-.ingresoChatbot{
+#instrucciones{
+    font-family: Helvetica;
+    text-decoration: underline;
+    text-shadow: -4px 10px 10px black;
+}
+
+.ingresoChatbot{ /*Seccion para el ingreso al chatbot mediante boton*/
     text-align: center;
     width: 100%;
     margin: 40px auto;
     padding: 20px;
-    background-color: blueviolet;
+    font-family: sans-serif;
+}
+
+.cajaBoton{
+    max-width: 800px;
+    margin: 80px auto;
+    padding: 20px;
+    border-radius: 30px;
+    background-color: aqua;
+    border: 5px solid #FFD700;
+}
+
+#chatbot{
+    font-family: 'Helvetica', Times, serif;
+    font-size: 2rem;
+    margin: 20px auto;
+    color: white;
+    text-decoration: underline;
+    text-shadow: -4px 10px 10px black;
+    max-width: 60%;
+}
+
+#boton {
+    /*Dimensiones*/
+    height: 100px;
+    width: 200px;
+    
+    /* Colores y Tipografia*/
+    background-color: #00008B;
+    color: white;
+    font-family: fantasy;
+    font-size: 1.2rem;         /* Tamaño de letra para que sea legible */
+    
+    /* Bordes Dorados*/
+    border: 5px solid #FFD700;
+    border-radius: 10px;
+    
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 1); 
+    
+    /* Interactividad*/
+    cursor: pointer;
+    transition: all 0.3s ease; /* Para que los cambios sean suaves*/
+}
+
+/* Efecto extra con pseudo-clases*/
+#boton:hover {
+    background-color: #0000CD;
+    transform: scale(1.05);    /*Resalta ligeramente*/
+}
+
+#boton:active {
+    transform: scale(0.95);    /*Efecto de hundimiento al hacer clic */
+    box-shadow: 2px 2px 5px black;
+}
+
+.aclaraciones{
+    text-align: center;
+    max-width: 60%;
+    margin: 80px auto;
+    padding: 20px;
+    border-radius: 15px;
+    border: 5px solid red;
+    background-color: rgb(190, 7, 7);
+}
+
+#tituloAclaraciones{
+    font-family: 'Helvetica', Times, serif;
+    font-size: 2rem;
+    margin: 20px auto;
+    color: white;
+    text-decoration: underline;
+    text-shadow: -4px 10px 10px black;
+    max-width: 60%;
 }
 
 /*-----------------------------------------------------------------------------------------------------------*/
@@ -77,10 +180,25 @@ header{ /*Estilo general para el header*/
 
 .creditos{
     text-align: center;
-    max-width: 100%;
-    margin: 40px auto;
+    max-width: 60%;
+    margin: 80px auto;
     padding: 20px;
-    background-color: blueviolet;
+    color: white;
+    background-color: rgb(255, 98, 0);
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(254, 224, 0, 0.9);
+}
+
+
+#creditos{
+    font-family: 'Helvetica', Times, serif;
+    font-size: 2rem;
+    margin: 80px auto;
+    color: white;
+    text-decoration: underline;
+    text-shadow: -4px 10px 10px black;
+    max-width: 60%;
+
 }
 
 .diego{
@@ -90,7 +208,12 @@ header{ /*Estilo general para el header*/
     padding: 20px;
     border-radius: 15px;
     border: 2px solid yellow;
-    background-color: brown;
+    background-color: #7CAA2D;
+}
+
+#dgTitulo{
+    font-family: Helvetica, Arial, sans-serif;
+
 }
 
 .uriel{
@@ -100,15 +223,24 @@ header{ /*Estilo general para el header*/
     padding: 20px;
     border-radius: 15px;
     border: 2px solid yellow;
-    background-color: brown;
+    background-color: #7CAA2D;
+}
+
+#ulTitulo{
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 .herramienta{
     text-align: center;
-    width: 100%;
-    height: 100%;
+    width: 90%;
     margin: 40px auto;
     padding: 10px;
-    background-color: blueviolet;
+    background-color: beige;
+    border-radius: 15px;
+    color: black;
+}
+
+#herramientas{
+    font-family: 'Helvetica', Times, serif;
 }
 /*-----------------------------------------------------------------------------------------------------------*/
