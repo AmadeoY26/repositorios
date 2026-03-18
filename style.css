@@ -326,6 +326,7 @@ header{ /*Estilo general para el header*/
         margin: 10px auto;
         padding: 5px;
         box-shadow: 5px 5px 10px rgba(254, 224, 0, 0.7);
+        margin-bottom: 60px;
     }
 
     .navegacion a {
@@ -352,13 +353,9 @@ header{ /*Estilo general para el header*/
     }
 
     .bienvenidaGeneral{
-        margin-top: 180px !important;
-        margin-bottom: 60px !important;
-        width: 90% !important;
-    }
-
-    .navegacion{
+        margin-top: 2500px !important;
         margin-bottom: 40px !important;
+        width: 90% !important;
     }
 
     .ingresoChatbot{
