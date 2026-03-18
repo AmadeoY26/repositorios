@@ -60,13 +60,28 @@ header{ /*Estilo general para el header*/
     border-color: #ffffff;       /*El borde cambia a blanco al resaltar */
 }
 
+@media (max-width: 600px){
+.navegacion{
+    position: static;
+    width: 450px;
+    margin: 0px auto;
+    padding: 20px;
+    background-color: rgb(255, 98, 0);
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px rgba(254, 224, 0, 0.9);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 0;
+} 
+}
+
 /*--------------------------------------------------------------------------------------------------*/
 
 /*Estilos para el main---------------------------------------------------------------------------------------*/
 
 .bienvenidaGeneral{ /*Estilos generales para la seccion de bienvenida*/
     width: 800px;
-    margin: 80px auto;
+    margin: 180px auto 80px auto;
     padding: 20px;
     border-radius: 15px;
     background-color: rgb(38, 0, 255);
@@ -291,3 +306,94 @@ header{ /*Estilo general para el header*/
     font-family: 'Helvetica', Times, serif;
 }
 /*-----------------------------------------------------------------------------------------------------------*/
+
+/*Media Queries generales para pantallas de telefono*/
+
+/* --- Ajustes para Celulares (Pantallas de menos de 600px) --- */
+@media (max-width: 600px) {
+    
+    /* 1. Ajuste del Título Principal */
+    #tituloPagina {
+        width: 90%; /* Cambiamos 800px por un porcentaje */
+        font-size: 28px; /* Reducimos un poco el tamaño de letra */
+        margin: 10px auto;
+    }
+
+    /* 2. Ajuste de la Navegación */
+    .navegacion {
+        position: relative; /* Cambiamos fixed por relative para que no flote sobre el contenido en móvil */
+        width: 95%; 
+        margin: 10px auto;
+        padding: 5px;
+        box-shadow: 5px 5px 10px rgba(254, 224, 0, 0.7);
+    }
+
+    .navegacion a {
+        display: block; /* Los botones se apilan uno sobre otro para que sean fáciles de tocar */
+        margin: 8px auto;
+        width: 80%;
+    }
+
+    /* 3. Ajuste de los "Rectángulos" de contenido */
+    .bienvenidaGeneral,
+    .usoLeonel,
+    .cajaBoton, 
+    .aclaraciones, 
+    .creditos, 
+    .diego, 
+    .uriel {
+        width: 90% !important; /* Forzamos a que ocupen el 90% de la pantalla */
+        max-width: 90%; 
+        margin: 30px auto;  /*Reducimos el margen vertical de 80px a 30px */
+        padding: 15px;
+        font-size: 16px; /* Ajustamos el texto para mejor lectura */
+        margin-bottom: 60px !important;
+        margin-top: 60px !important;
+    }
+
+    .bienvenidaGeneral{
+        margin-top: 180px !important;
+        margin-bottom: 60px !important;
+        width: 90% !important;
+    }
+
+    .navegacion{
+        margin-bottom: 40px !important;
+    }
+
+    .ingresoChatbot{
+        margin-bottom: 60px !important;
+        margin-top: 0px !important;
+    }
+
+    .usoLeonel{
+        margin-bottom: 5px !important;
+        margin-top: 60px !important;
+    }
+
+    .creditos{
+        margin-bottom: 60px !important;
+        margin-top: 1px !important;
+    }
+
+    .aclaraciones{
+        margin-bottom: 5px !important;
+    }
+
+    /* Ajustes específicos para elementos internos */
+    #chatbot, #tituloAclaraciones, #creditos {
+        max-width: 100%;
+        font-size: 1.5rem;
+    }
+
+    #boton {
+        width: 100%; /* El botón ocupa todo el ancho de su contenedor */
+        height: 80px;
+    }
+
+    .herramienta {
+        width: 95%;
+    }
+}
+
+/*--------------------------------------------------------------------------------------------------------------*/
