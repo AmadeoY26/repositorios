@@ -90,12 +90,11 @@ header{ /*Estilo general para el header*/
     font-family: sans-serif;
     font-size: 18px;
 
-    cursor: pointer;
     transition: all 0.3s ease;
 }
 
 .bienvenidaGeneral:hover{
-    transform: scale(1.05); 
+    transform: scale(1.09); 
 }
 
 #introduccion{ /*Estilo al h2 'Bienvenido'*/
@@ -115,12 +114,11 @@ header{ /*Estilo general para el header*/
     font-family: sans-serif;
     font-size: 18px;
 
-    cursor: pointer;
     transition: all 0.3s ease;
 }
 
 .usoLeonel:hover{
-    transform: scale(1.05);
+    transform: scale(1.09);
 }
 
 #instrucciones{
@@ -163,19 +161,19 @@ header{ /*Estilo general para el header*/
     height: 100px;
     width: 200px;
     
-    /* Colores y Tipografia*/
+    /*Colores y Tipografia*/
     background-color: #00008B;
     color: white;
     font-family: fantasy;
     font-size: 1.2rem;         /* Tamaño de letra para que sea legible */
     
-    /* Bordes Dorados*/
+    /*Bordes Dorados*/
     border: 5px solid #FFD700;
     border-radius: 10px;
     
     box-shadow: 8px 8px 15px rgba(0, 0, 0, 1); 
     
-    /* Interactividad*/
+    /*Interactividad*/
     cursor: pointer;
     transition: all 0.3s ease; /* Para que los cambios sean suaves*/
 }
@@ -183,7 +181,7 @@ header{ /*Estilo general para el header*/
 /* Efecto extra con pseudo-clases*/
 #boton:hover {
     background-color: #0000CD;
-    transform: scale(1.05);    /*Resalta ligeramente*/
+    transform: scale(1.12);    /*Resalta ligeramente*/
 }
 
 #boton:active {
@@ -202,7 +200,6 @@ header{ /*Estilo general para el header*/
     color: white;
     font-size: 18px;
 
-    cursor: pointer;
     transition: all 0.3s ease;
 }
 
@@ -265,6 +262,10 @@ header{ /*Estilo general para el header*/
     transform: scale(1.05)
 }
 
+.diego:active{
+    transform: scale(0.95);
+}
+
 #dgTitulo{
     font-family: Helvetica, Arial, sans-serif;
 
@@ -288,6 +289,10 @@ header{ /*Estilo general para el header*/
     transform: scale(1.05);
 }
 
+.uriel:active{
+    transform: scale(0.95);
+}
+
 #ulTitulo{
     font-family: Helvetica, Arial, sans-serif;
 }
@@ -300,26 +305,32 @@ header{ /*Estilo general para el header*/
     background-color: white;
     border-radius: 15px;
     color: black;
+
+    transition: all 0.3s ease;
 }
 
 #herramientas{
     font-family: 'Helvetica', Times, serif;
 }
+
+.herramienta:hover{
+    transform: scale(1.02);
+}
 /*-----------------------------------------------------------------------------------------------------------*/
 
-/*Media Queries generales para pantallas de telefono*/
+/*Media Queries generales para pantallas de telefono---------------------------------------------------------------------------*/
 
 /* --- Ajustes para Celulares (Pantallas de menos de 600px) --- */
 @media (max-width: 600px) {
     
-    /* 1. Ajuste del Título Principal */
+    /* Ajuste del titulo Principal*/
     #tituloPagina {
-        width: 90%; /* Cambiamos 800px por un porcentaje */
-        font-size: 28px; /* Reducimos un poco el tamaño de letra */
+        width: 90%;
+        font-size: 28px;
         margin: 10px auto;
     }
 
-    /* 2. Ajuste de la Navegación */
+    /* Ajuste de la Navegacion*/
     .navegacion {
         position: relative; /* Cambiamos fixed por relative para que no flote sobre el contenido en móvil */
         width: 95%; 
@@ -335,7 +346,7 @@ header{ /*Estilo general para el header*/
         width: 80%;
     }
 
-    /* 3. Ajuste de los "Rectángulos" de contenido */
+    /* ajustes de los rectangulos - general*/
     .bienvenidaGeneral,
     .usoLeonel,
     .cajaBoton, 
@@ -343,11 +354,11 @@ header{ /*Estilo general para el header*/
     .creditos, 
     .diego, 
     .uriel {
-        width: 90% !important; /* Forzamos a que ocupen el 90% de la pantalla */
+        width: 90% !important;
         max-width: 90%; 
-        margin: 30px auto;  /*Reducimos el margen vertical de 80px a 30px */
+        margin: 30px auto;
         padding: 15px;
-        font-size: 16px; /* Ajustamos el texto para mejor lectura */
+        font-size: 16px;
         margin-bottom: 60px !important;
         margin-top: 60px !important;
     }
@@ -404,6 +415,25 @@ header{ /*Estilo general para el header*/
     .herramienta {
         width: 95%;
     }
+
+    .bienvenidaGeneral:hover{
+    transform: scale(1.03); 
+    }
+
+    .usoLeonel:hover{
+    transform: scale(1.03); 
+    }
+
+    #boton:hover {
+    background-color: #0000CD;
+    transform: scale(1.05);    /*Resalta ligeramente*/
+    }
+
+    #boton:active {
+    transform: scale(0.95);    /*Efecto de hundimiento al hacer clic */
+    box-shadow: 2px 2px 5px black;
+    }
+
 }
 
 /*--------------------------------------------------------------------------------------------------------------*/
